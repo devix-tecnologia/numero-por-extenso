@@ -1,14 +1,23 @@
 {
   "name": "numero-por-extenso",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "Escreve números por extenso: normais, monetários e porcentagens.",
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "package.json",
+    "index.js",
+    "lib/"
+  ],
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LenonBordini/numero-por-extenso.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "vitest"
   },
   "author": "Lenon Bordini",
   "keywords": [
@@ -22,7 +31,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "assert": "^1.4.1",
-    "mocha": "^5.1.1"
+    "vitest": "^1.3.0"
   }
 }
