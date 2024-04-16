@@ -1,4 +1,4 @@
-import { numberInFull } from "../common.js";
+import { numberInFull } from "../common";
 
 /**
  * Converte um número para sua representação por extenso em reais.
@@ -9,11 +9,12 @@ import { numberInFull } from "../common.js";
 export default function porExtenso(numero: number): string {
   let numberStr = numero.toString().replace("-", "").split("."),
       numberBefore = parseInt(numberStr[0]) || 0,
-      numberAfter = parseInt((numberStr[1] || "0") + "00".substring(0, 2));
+      numberAfter = parseInt(((numberStr[1] || "0") + "00").substring(0, 2));
+
 
   let numberBeforeExtended = 
       (numero < 0 ? "menos " : "") + numberInFull(numberBefore),
-      numberAfterExtended = numberInFull(+numberAfter.toString());
+      numberAfterExtended = numberInFull(numberAfter);
 
   return (
     (numberBefore > 0
@@ -26,3 +27,5 @@ export default function porExtenso(numero: number): string {
       : "")
   );
 }
+
+

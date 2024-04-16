@@ -1,5 +1,5 @@
-import { numberInFull } from "../common.js";
-import casasDecimais from "../nomesExtenso/casasDecimais.js";
+import { numberInFull } from "../common";
+import casasDecimais from "../nomesExtenso/casasDecimais";
 
 /**
  * Converte um número para sua representação por extenso, incluindo casas decimais nomeadas.
@@ -9,12 +9,12 @@ import casasDecimais from "../nomesExtenso/casasDecimais.js";
  */
 export default function porExtenso(numero: number): string {
   let numberStr = numero.toString().replace("-", "").split("."),
-      numberBefore = numberStr[0] || "0",
-      numberAfter = numberStr[1] || "";
+    numberBefore = numberStr[0] || "0",
+    numberAfter = numberStr[1] || "";
 
   let numberBeforeExtended =
       (numero < 0 ? "menos " : "") + numberInFull(Number(numberBefore)),
-      numberAfterExtended = "";
+    numberAfterExtended = "";
 
   if (parseInt(numberAfter)) {
     numberAfter = numberAfter.replace(/0+$/g, ""); // Remove trailing zeros
@@ -34,7 +34,7 @@ export default function porExtenso(numero: number): string {
  * @returns O nome apropriado da casa decimal, ajustado para singular ou plural.
  */
 function descobreNomeCasaDecimal(numberAfter: string): string {
-  let casaDecimal : string | string[] = casasDecimais[numberAfter.length - 1] || "";
+  let casaDecimal: string | string[] = casasDecimais[numberAfter.length - 1] || "";
 
   // plural
   if (casaDecimal && parseInt(numberAfter) !== 1) {
