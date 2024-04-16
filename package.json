@@ -34,7 +34,10 @@
     "prepack": "npm run build",
     "semantic-release": "semantic-release"
   },
-  "author": "Lenon Bordini",
+  "author": [
+    "Lenon Bordini",
+    "Devix Tecnologia"
+  ],
   "keywords": [
     "numero",
     "extenso",
@@ -46,6 +49,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.3",
+    "@semantic-release/npm": "^12.0.0",
+    "semantic-release": "^23.0.8",
     "vitest": "^1.3.0"
   }
 }
