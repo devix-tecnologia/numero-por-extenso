@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { normal, porcentagem, monetario } from "../index.js";
+import { normal, porcentagem, monetario } from "../src/index.js";
 
 function equal(a, b) {
   expect(a).toBe(b);
@@ -130,7 +130,7 @@ describe("testando README.md", () => {
     // Maior número possível (type string)
     equal(
       normal(
-        "999999999999999999999999999999999999999999999.99999999999999999999"
+        Number("999999999999999999999999999999999999999999999.99999999999999999999")
       ),
       "novecentos e noventa e nove tredecilhões novecentos e noventa e nove duodecilhões novecentos e noventa e nove undecilhões novecentos e noventa e nove decilhões novecentos e noventa e nove nonilhões novecentos e noventa e nove octilhões novecentos e noventa e nove septilhões novecentos e noventa e nove sextilhões novecentos e noventa e nove quintilhões novecentos e noventa e nove quatrilhões novecentos e noventa e nove trilhões novecentos e noventa e nove bilhões novecentos e noventa e nove milhões novecentos e noventa e nove mil novecentos e noventa e nove vírgula noventa e nove quintilhões novecentos e noventa e nove quatrilhões novecentos e noventa e nove trilhões novecentos e noventa e nove bilhões novecentos e noventa e nove milhões novecentos e noventa e nove mil novecentos e noventa e nove centésimos de quintilionésimo"
     );
@@ -139,7 +139,7 @@ describe("testando README.md", () => {
 
 describe("Issue #1", () => {
   test("escrevendo 1.000.090.000,00", () => {
-    equal(monetario("1000090000.00"), "um bilhão e noventa mil reais");
+    equal(monetario(Number("1000090000.00")), "um bilhão e noventa mil reais");
   });
 });
 

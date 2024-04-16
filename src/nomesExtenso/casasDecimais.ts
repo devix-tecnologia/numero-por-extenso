@@ -1,4 +1,4 @@
-export default [
+const casasDecimais: string[] = [
     'décimo',
     'centésimo',
     'milésimo',
@@ -20,3 +20,5 @@ export default [
     'décimo de quintilionésimo',
     'centésimo de quintilionésimo'
 ];
+
+export default casasDecimais;

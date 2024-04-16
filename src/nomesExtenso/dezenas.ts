@@ -1,4 +1,4 @@
-export default [
+const dezenas: string[] = [
     'dez',
     'onze',
     'doze',
@@ -10,3 +10,5 @@ export default [
     'dezoito',
     'dezenove'
 ];
+
+export default dezenas;

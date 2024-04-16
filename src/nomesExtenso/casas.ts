@@ -1,4 +1,4 @@
-export default [
+const casas: string[] = [
     '',
     'mil',
     'milhões',
@@ -15,3 +15,5 @@ export default [
     'duodecilhões',
     'tredecilhões'
 ];
+
+export default casas;

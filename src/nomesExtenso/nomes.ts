@@ -1,4 +1,4 @@
-const primeiraCasa = [
+const primeiraCasa: string[] = [
     'zero',
     'um',
     'dois',
@@ -11,7 +11,7 @@ const primeiraCasa = [
     'nove'
 ];
 
-const segundaCasa = [
+const segundaCasa: string[] = [
     '',
     'dez',
     'vinte',
@@ -24,7 +24,7 @@ const segundaCasa = [
     'noventa'
 ];
 
-const terceiraCasa = [
+const terceiraCasa: string[] = [
     '',
     'cento',
     'duzentos',
@@ -37,8 +37,10 @@ const terceiraCasa = [
     'novecentos'
 ];
 
-export default [
+const nomes: string[][] = [
     primeiraCasa,
     segundaCasa,
     terceiraCasa
 ];
+
+export default nomes;
