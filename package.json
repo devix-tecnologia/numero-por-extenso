@@ -34,10 +34,7 @@
     "prepack": "npm run build",
     "semantic-release": "semantic-release"
   },
-  "author": [
-    "Lenon Bordini",
-    "Devix Tecnologia"
-  ],
+  "author": "Devix Tecnologia",
   "keywords": [
     "numero",
     "extenso",
