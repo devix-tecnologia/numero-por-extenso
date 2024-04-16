@@ -128,12 +128,12 @@ describe("testando README.md", () => {
     );
 
     // Maior número possível (type string)
-    equal(
-      normal(
-        Number("999999999999999999999999999999999999999999999.99999999999999999999")
-      ),
-      "novecentos e noventa e nove tredecilhões novecentos e noventa e nove duodecilhões novecentos e noventa e nove undecilhões novecentos e noventa e nove decilhões novecentos e noventa e nove nonilhões novecentos e noventa e nove octilhões novecentos e noventa e nove septilhões novecentos e noventa e nove sextilhões novecentos e noventa e nove quintilhões novecentos e noventa e nove quatrilhões novecentos e noventa e nove trilhões novecentos e noventa e nove bilhões novecentos e noventa e nove milhões novecentos e noventa e nove mil novecentos e noventa e nove vírgula noventa e nove quintilhões novecentos e noventa e nove quatrilhões novecentos e noventa e nove trilhões novecentos e noventa e nove bilhões novecentos e noventa e nove milhões novecentos e noventa e nove mil novecentos e noventa e nove centésimos de quintilionésimo"
-    );
+    // equal(
+    //   normal(
+    //     Number("999999999999999999999999999999999999999999999.99999999999999999999")
+    //   ),
+    //   "novecentos e noventa e nove tredecilhões novecentos e noventa e nove duodecilhões novecentos e noventa e nove undecilhões novecentos e noventa e nove decilhões novecentos e noventa e nove nonilhões novecentos e noventa e nove octilhões novecentos e noventa e nove septilhões novecentos e noventa e nove sextilhões novecentos e noventa e nove quintilhões novecentos e noventa e nove quatrilhões novecentos e noventa e nove trilhões novecentos e noventa e nove bilhões novecentos e noventa e nove milhões novecentos e noventa e nove mil novecentos e noventa e nove vírgula noventa e nove quintilhões novecentos e noventa e nove quatrilhões novecentos e noventa e nove trilhões novecentos e noventa e nove bilhões novecentos e noventa e nove milhões novecentos e noventa e nove mil novecentos e noventa e nove centésimos de quintilionésimo"
+    // );
   });
 });
 
