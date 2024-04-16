@@ -1,4 +1,4 @@
-import { numberInFull } from "../common";
+import { numberInFull } from "../common.js";
 
 /**
  * Converte um número para sua representação por extenso em reais.

@@ -1,6 +1,6 @@
 import nomes from "./nomesExtenso/nomes.js";
 import dezenas from "./nomesExtenso/dezenas.js";
-import casas from "./nomesExtenso/casas";
+import casas from "./nomesExtenso/casas.js";
 
 /**
  * Retorna o grupo numérico em extenso.
