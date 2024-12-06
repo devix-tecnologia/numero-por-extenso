@@ -1,6 +1,4 @@
 node_modules/
 .vscode/
-package-lock.json
 shell.js
-yarn.lock
 dist/
