@@ -21,10 +21,17 @@
     "dist"
   ],
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devix-tecnologia/numero-por-extenso.git"
   },
+  "bugs": {
+    "url": "https://github.com/devix-tecnologia/numero-por-extenso/issues"
+  },
+  "homepage": "https://github.com/devix-tecnologia/numero-por-extenso#readme",
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
