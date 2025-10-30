@@ -1,6 +1,6 @@
 {
   "name": "@devix-tecnologia/numero-por-extenso",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Escreve números por extenso: normais, monetários e porcentagens.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
