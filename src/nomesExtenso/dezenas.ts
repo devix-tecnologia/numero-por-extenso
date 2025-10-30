@@ -1,14 +1,14 @@
 const dezenas: string[] = [
-    'dez',
-    'onze',
-    'doze',
-    'treze',
-    'quatorze',
-    'quinze',
-    'dezesseis',
-    'dezessete',
-    'dezoito',
-    'dezenove'
-];
+  'dez',
+  'onze',
+  'doze',
+  'treze',
+  'quatorze',
+  'quinze',
+  'dezesseis',
+  'dezessete',
+  'dezoito',
+  'dezenove',
+]
 
-export default dezenas;
+export default dezenas

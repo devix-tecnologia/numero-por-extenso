@@ -1,4 +1,4 @@
-import normal from "./normal.js";
+import normal from './normal.js'
 
 /**
  * Retorna a representação por extenso de um número seguida da string " por cento".
@@ -7,5 +7,5 @@ import normal from "./normal.js";
  * @returns A representação por extenso do número seguido de " por cento".
  */
 export default function porExtenso(numero: number): string {
-  return normal(numero) + " por cento";
+  return normal(numero) + ' por cento'
 }
